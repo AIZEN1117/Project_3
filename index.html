@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Online Library Management</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-content">
+      <h1>📚 Welcome to Online Library Management</h1>
+      <p>Browse, borrow, and return books—simple and fast.</p>
+      <button id="openBtn" class="btn">Enter Library</button>
+    </div>
+  </header>
+
+  <script>
+    document.getElementById('openBtn').addEventListener('click', () => {
+      window.location.href = 'library.html';
+    });
+  </script>
+</body>
+</html>
