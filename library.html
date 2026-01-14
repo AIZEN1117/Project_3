@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Library Catalog</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <nav class="topbar">
+    <h2>Online Library</h2>
+    <div class="actions">
+      <a class="btn secondary" href="index.html">⬅ Home</a>
+      <a class="btn github" href="https://github.com/your-username/your-repo" target="_blank">GitHub</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <section class="controls">
+      <input type="text" id="searchInput" placeholder="Search by title or author..."/>
+      <select id="filterSelect">
+        <option value="all">All</option>
+        <option value="available">Available</option>
+        <option value="borrowed">Borrowed</option>
+      </select>
+      <button id="resetBtn" class="btn small">Reset</button>
+    </section>
+
+    <section id="catalog" class="catalog"></section>
+  </main>
+
+  <footer class="footer">
+    <p>Tip: Your borrow/return changes are saved in your browser.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
